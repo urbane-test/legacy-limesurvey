@@ -37,7 +37,7 @@ if(isset($_GET['user']) && isset($_GET['onepass']))
     $pw = sanitize_paranoid_string(md5($_GET['onepass']));
 
     //check if setting $use_one_time_passwords exists in config file
-    if(isset($ ))
+    if(isset($use_one_time_passwords ))
     {
         //$use_one_time_passwords switched OFF but data was passed by URL: Show error message
         if($use_one_time_passwords === false)
